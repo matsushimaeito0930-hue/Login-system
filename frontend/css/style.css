@@ -1,0 +1,178 @@
+/* =========================
+   全体
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("../image/behind.png") !important;
+    font-family: Arial, sans-serif; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================
+   ログイン画面中央配置
+========================= */
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* =========================
+   ログインカード
+========================= */
+
+.login-card {
+    width: 500px;
+    max-width: 350px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 70px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   タイトル
+========================= */
+
+.login-card h1 {
+    margin-bottom: 8px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+
+/* =========================
+   説明文
+========================= */
+
+.description {
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* =========================
+   Username / Password
+========================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+
+
+/* =========================
+   input
+========================= */
+
+.form-group input {
+    
+    width: 200px;
+    padding: 14px 16px;
+    color: #222;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #777;
+}
+
+
+/* inputをクリックしたとき */
+
+.form-group input:focus {
+    background: white;
+    border-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================
+   Loginボタン
+========================= */
+.form-group .login-button {
+    text-align: center;
+}
+.login-button {
+    color: white;
+    display: block;
+    margin: 0 auto 0   ;    
+    width: 100px;
+    margin-top: 10px;
+    padding: 14px;
+    background: rgba(25, 95, 65, 1);
+    font-size: 16px;
+    font-weight: bold
+    background: rgba(30, 80, 60, 0.9);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    background: rgb(23, 130, 230);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   新規登録
+========================= */
+
+.register-text {
+    margin-top: 25px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    text-align: center;
+}
+
+.register-text a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
